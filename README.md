@@ -52,6 +52,11 @@ To get your own Telegram Bot to develop new features and start extending FutureB
 * **Have fun**
 
 
+## References
+Telepot: https://telepot.readthedocs.io/en/latest/index.html#an-easier-way-to-receive-messages
+Telegram Bot API: https://core.telegram.org/bots/api
+
+
 ## House Rules
 * Do not intentionally break the Bot / Raspberry.
 * Only do pull requests into the master branch of the FutureBot repository, never do a direct commit.
