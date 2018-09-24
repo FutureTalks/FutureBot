@@ -1,0 +1,7 @@
+__pycache__/
+.vscode/
+*.py[cod]
+*$py.class
+
+customConfig.py
+futurebot.db
