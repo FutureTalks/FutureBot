@@ -13,7 +13,7 @@ import config
 import customConfig
 import adminHandler
 import userHandler
-import cloudVisionHandler
+import AWSHandler
 
 
 """
@@ -60,7 +60,7 @@ class FutureBot(telepot.helper.ChatHandler):
 
 	def handleImage(self, content, chat_id):
 		try:
-			cloudVisionHandler.handleImage(content, chat_id, bot)
+			AWSHandler.handleImage(content, chat_id, bot)
 
 		except Exception as e:
 			# Error with traceback
@@ -80,6 +80,10 @@ class FutureBot(telepot.helper.ChatHandler):
 
 			#Handle normal users
 			self.handleUser(text, msg, chat_id)
+
+			#Handle Cloud commands with text
+			AWSHandler.handleText(text, msg, chat_id, bot)
+
 
 		except Exception as e:
 			# Error with traceback

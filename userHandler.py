@@ -26,7 +26,6 @@ def handleUser(command, msg, chat_id, bot):
     user = msg['from']
     firstname = user['first_name']
     request = firstname + ' : ' + command
-    print (unicode(request))
     # Commands with '/'  --------------------
     if command=='/start':
         mydb = SQLight(config.database_name)
