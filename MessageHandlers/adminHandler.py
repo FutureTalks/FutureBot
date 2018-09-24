@@ -1,4 +1,4 @@
-from SQLight import SQLight
+from Database.SQLight import SQLight
 from telepot.namedtuple import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 import config
 

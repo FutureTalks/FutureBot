@@ -5,15 +5,15 @@ import logging
 import telepot
 from telepot.delegate import per_from_id, per_chat_id, per_inline_from_id, create_open, pave_event_space, include_callback_query_chat_id
 from telepot.namedtuple import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
-from SQLight import SQLight
+from Database.SQLight import SQLight
 import urllib2
 
 #Other files
 import config
 import customConfig
-import adminHandler
-import userHandler
-import AWSHandler
+import MessageHandlers.adminHandler as adminHandler
+import MessageHandlers.userHandler as userHandler
+import MessageHandlers.AWSHandler as AWSHandler
 
 
 """
